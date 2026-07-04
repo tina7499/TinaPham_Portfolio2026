@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- cursor glow that follows the mouse -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- side dot navigation, labeled like file tabs -->
+  <nav class="side-nav" id="sideNav">
+    <a href="#home" class="nav-dot active" data-section="home" ><span>HOME</span></a>
+    <a href="#about" class="nav-dot" data-section="about"><span>ABOUT</span></a>
+    <a href="#skills" class="nav-dot" data-section="skills"><span>SKILLS</span></a>
+    <a href="#experience" class="nav-dot" data-section="experience"><span>EXPERIENCE</span></a>
+    <a href="#projects" class="nav-dot" data-section="projects"><span>PROJECTS</span></a>
+    <a href="#contact" class="nav-dot" data-section="contact"><span>CONTACT</span></a>
+  </nav>
+
+  <main class="scroll-container" id="scrollContainer">
+
+    <!-- ================= HERO / HOME ================= -->
+    <section class="panel hero" id="home">
+      <div class="hero-bg-text" aria-hidden="true">HELLO</div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow mono">2026</p>
+        <h1 class="hero-name" id="heroName" data-text="YOUR NAME">TINA PHAM</h1>
+        <p class="hero-tagline">Bachelor of Science (BSc) in Global Business Informatic from IT University of Copenhagen</p>
+
+        <div class="hero-meta mono">
+          <span>Based in Denmark, Copenhagen</span>
+          <span class="dot-sep">•</span>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+        <span class="mono">scroll</span>
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="panel about" id="about">
+      <div class="section-inner reveal">
+        <p class="section-label mono">About</p>
+        <h2 class="section-title">Recent graduate with a passion<br>IT projects and optimization.</h2>
+
+        <div class="about-grid">
+          <p class="about-text">
+            Detail-oriented and curious professional with a strong interest in HR, process improvement, 
+            and digital solutions. I enjoy solving problems, streamlining workflows, and contributing 
+            to projects that create value for both organizations and people. I am eager to apply my 
+            analytical mindset and collaborative approach to help organizations improve the way they work.
+          </p>
+
+          <ul class="about-facts mono">
+            <li><span>Currently</span><strong>Graduate</strong></li>
+            <li><span>Focus</span><strong>Project management</strong></li>
+            <li><span>Education</span><strong>(BSc) in Global Business Informatic / IT University of Copenhagen (ITU)</strong></li>
+            <li><span>Languages</span><strong>Danish(native), English(fluent), Thai(moderate), German (basic) </strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="panel skills" id="skills">
+      <div class="section-inner reveal">
+        <p class="section-label mono">Skills</p>
+        <h2 class="section-title">Tools & things<br>I'm good at.</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <h3 class="mono">Coding</h3>
+            <ul>
+              <li>Python</li>
+              <li>R</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="mono">Tools</h3>
+            <ul>
+              <li>Office365 (Excel, Power BI, ADO etc.)</li>
+              <li>ServiceNow</li>
+              <li>Miro, Figma & Canva</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="mono">Competences</h3>
+            <ul>
+              <li>Service-minded</li>
+              <li>Planning & organizing</li>
+              <li>Collaboration & teamwork</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="panel experience" id="experience">
+      <div class="section-inner reveal">
+        <p class="section-label mono">Experience</p>
+        <h2 class="section-title">Where I've<br>worked.</h2>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <p class="timeline-date mono">2024 — 2026</p>
+            <div class="timeline-body">
+              <h3>Studentassistent</h3>
+              <p class="timeline-company mono">Koncern IT, Københavns Kommune</p>
+              <p>Managing IT projects and organisational processes. I prepared presentations and decision material, mapping and improving workflows, 
+                coordinating stakeholders, and planned/facilitated workshops. I also supported recruitment 
+                activities and took ownership of onboarding, ensuring a smooth and structured introduction to the team.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-date mono">2021 — 2022</p>
+            <div class="timeline-body">
+              <h3>Salesassistent/Picolo</h3>
+              <p class="timeline-company mono">Nordisk Film Biografer</p>
+              <p>Cleaning and preparing theaters, delivering excellent service to guests, and offering them an irresistible offer regarding movies and snacks. 
+                Additionally, I was responsible for children's birthday parties and was part of the SoMe team</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="panel projects" id="projects">
+      <div class="section-inner reveal">
+        <p class="section-label mono">Projects</p>
+        <h2 class="section-title">Things and companies<br>I've worked with.</h2>
+
+        <div class="project-grid">
+
+          <a href="#" class="project-card">
+            <div class="project-card-inner">
+              <span class="project-number mono">01</span>
+              <h3>Password Management Application</h3>
+              <p>App made for retrieving passwords which were previously retrieved manually on paper.</p>
+              <span class="project-tags mono">Optimization — Security — Process mapping</span>
+            </div>
+          </a>
+
+          <a href="#" class="project-card">
+            <div class="project-card-inner">
+              <span class="project-number mono">02</span>
+              <h3>Roskilde Festival</h3>
+              <p>Researching the introduction of an AI solution in their crowd management process. </p>
+              <span class="project-tags mono">Fieldwork — AI — Actor Network Theory</span>
+            </div>
+          </a>
+
+          <a href="#" class="project-card">
+            <div class="project-card-inner">
+              <span class="project-number mono">03</span>
+              <h3>Semler</h3>
+              <p>Mapping their AS-IS process and looking for improvements resulting in suggesting a TO-BE process for impelemtning</p>
+              <span class="project-tags mono">Implementation — Optimization — Process mapping</span>
+            </div>
+            </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="panel contact" id="contact">
+      <div class="section-inner reveal contact-inner">
+        <p class="section-label mono">Contact</p>
+        <h2 class="section-title contact-title">Let's work<br>together.</h2>
+
+        <a href="mailto:tina.pham7499@gmail.com" class="contact-email">tina.pham7499@gmail.com</a>
+
+        <div class="contact-links mono">
+          <a href="https://www.linkedin.com/in/tina-pham-595325270/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="resume2026.pdf" target="_blank">
+            Resume (PDF)
+        </a>
+        </div>
+
+        <p class="footer-note mono">© 2026 Tina Pham — built with care.</p>
+      </div>
+    </section>
+
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
